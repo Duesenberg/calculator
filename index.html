@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Online Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="main-container">
+        <div class="result-screen-container"></div>
+        <div class="buttons">
+          <div class="buttons-container">
+            <button data-key="7" class="numpad" value="7">7</button>
+            <button data-key="8" class="numpad" value="8">8</button>
+            <button data-key="9" class="numpad" value="9">9</button>
+            <button data-key="4" class="numpad" value="4">4</button>
+            <button data-key="5" class="numpad" value="5">5</button>
+            <button data-key="6" class="numpad" value="6">6</button>
+            <button data-key="1" class="numpad" value="1">1</button>
+            <button data-key="2" class="numpad" value="2">2</button>
+            <button data-key="3" class="numpad" value="3">3</button>
+            <button data-key="." class="numpad" value=".">,</button>
+            <button data-key="0" class="numpad" value="0">0</button>
+            <button data-key="ArrowUp" onclick="invert ()">+/-</button>
+          </div>
+          <div class="operations-container">
+            <button data-key="Backspace" onclick="backSpace ()">&#8701</button>
+            <button data-key="Delete" onclick="clearAll()">C</button>
+            <button data-key="+" class="operate" id="plus">+</button>
+            <button data-key="-" class="operate" id="minus">-</button>
+            <button data-key="*" class="operate" id="multiply">x</button>
+            <button data-key="/" class="operate" id="divide">/</button>
+            <button data-key="ArrowDown" onclick="perCent ()">%</button>
+            <button data-key="Enter" onclick="equals ()">=</button>
+        </div>
+        </div>
+      </div>  
+    </div>
+  </body>
+</html>
